@@ -12,7 +12,7 @@
     "sb": "npm run docs:json && start-storybook -p 6006",
     "sb:docs": "start-storybook --docs --no-manager-cache"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^15.1.0",
     "@angular/common": "^15.1.0",
