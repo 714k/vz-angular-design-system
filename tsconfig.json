@@ -4,7 +4,7 @@
   "compilerOptions": {
     "paths": {
       "angular-components": [
-        "dist/angular-components"
+        "dist/vz-angular-design-system"
       ]
     },
     "baseUrl": "./",
