@@ -1,0 +1,18 @@
+<nav role="navigation" class="vz-table-of-contents">
+  <p>{{ title }}</p>
+  <ul>
+    <li 
+      role="list"
+      *ngFor="let anchor of anchors"
+      >
+      <a 
+        [routerLink]='"."' 
+        [fragment]="anchor.href"
+        [class]="anchor.classes" 
+        [title]="anchor.title">
+        <span class="prefix">{{ anchor.prefixLabel }}</span> 
+        <span class="label">{{ anchor.label }}</span>
+      </a>
+    </li>
+   </ul>
+</nav> 
