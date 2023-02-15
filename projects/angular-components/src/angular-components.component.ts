@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-angular-components',
+  selector: 'vz-angular-components',
   template: `
     <p>
       angular-components works!

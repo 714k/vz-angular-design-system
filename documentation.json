@@ -5,7 +5,7 @@
         {
             "name": "AngularComponentsService",
             "id": "injectable-AngularComponentsService-de16fcf006153c327a4844cb7919fcb844bf9fe6c4093273d5c468fd44c8b317572e12d21887b9c40f508228ce9c45ec8de5ba1fe35d6798cc624ea83dc8b2eb",
-            "file": "projects/angular-components/src/lib/angular-components.service.ts",
+            "file": "projects/angular-components/src/angular-components.service.ts",
             "properties": [],
             "methods": [],
             "deprecated": false,
@@ -31,14 +31,14 @@
     "components": [
         {
             "name": "AngularComponentsComponent",
-            "id": "component-AngularComponentsComponent-556dbfd507694179ec853aec5222b7cedd2cdeb44417e9820691f5f9b5d94d5da5579007f2de1ef4f8143d2127a854b5cc4b3dd60e5cb2c6cf155024e760996d",
-            "file": "projects/angular-components/src/lib/angular-components.component.ts",
+            "id": "component-AngularComponentsComponent-d3e13b7067fa466f8fd565185d0a0b0464222541ee256f35db06237a0959c3a94030755d923876a06bf977f996b2df397bfc223b53ef501c8c4ba855d26f5faf",
+            "file": "projects/angular-components/src/angular-components.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "lib-angular-components",
+            "selector": "vz-angular-components",
             "styleUrls": [],
             "styles": [],
             "template": "<p>\n  angular-components works!\n</p>\n",
@@ -55,7 +55,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-angular-components',\n  template: `\n    <p>\n      angular-components works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class AngularComponentsComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'vz-angular-components',\n  template: `\n    <p>\n      angular-components works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class AngularComponentsComponent {\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -129,7 +129,7 @@
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/angular-components/src/lib/angular-components.module.ts",
+            "file": "projects/angular-components/src/angular-components.module.ts",
             "methods": [],
             "sourceCode": "import { NgModule } from '@angular/core';\nimport { AngularComponentsComponent } from './angular-components.component';\n\n\n\n@NgModule({\n  declarations: [\n    AngularComponentsComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    AngularComponentsComponent\n  ]\n})\nexport class AngularComponentsModule { }\n",
             "children": [
@@ -228,6 +228,24 @@
         "status": "low",
         "files": [
             {
+                "filePath": "projects/angular-components/src/angular-components.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AngularComponentsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/angular-components/src/angular-components.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AngularComponentsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/angular-components/src/components/header-navigation/header-navigation.component.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -254,24 +272,6 @@
                 "name": "HeaderNavigationComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/angular-components/src/lib/angular-components.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "AngularComponentsComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/angular-components/src/lib/angular-components.service.ts",
-                "type": "injectable",
-                "linktype": "injectable",
-                "name": "AngularComponentsService",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
                 "status": "low"
             }
         ]
