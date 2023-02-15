@@ -11,12 +11,11 @@ export default {
   component: HeaderNavigationComponent,
   decorators: [
     moduleMetadata({
-      //👇 Imports both components to allow component composition with Storybook
       declarations: [HeaderNavigationComponent],
       imports: [RouterTestingModule ],
     }),
     //👇 Wraps our stories with a decorator
-    componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
+    componentWrapperDecorator(story => `<div style="margin: 1em">${story}</div>`),
   ],
   argTypes: {
     title:{
@@ -26,7 +25,7 @@ export default {
     },
     anchors: {
       control: {
-        type: 'object'
+        type: 'array'
       }
     }
   },
@@ -34,7 +33,33 @@ export default {
 
 //👇 We create a “template” of how args map to rendering
 const Template: Story = (args) => ({
-  props: args,
+  props: {
+    title: 'Table of Contents',
+    anchors: [
+      {
+        title: 'Anchor 1',
+        href: 'anchor1',
+        classes: 'anchor-class',
+        prefixLabel: '',
+        label: 'Anchor 1'
+      }, {
+        title: 'Anchor 1',
+        href: 'anchor2',
+        classes: 'anchor-class',
+        prefixLabel: '001',
+        label: 'Anchor 2'
+      }, { 
+        title: 'Anchor 1',
+        href: 'anchor3',
+        classes: 'active',
+        prefixLabel: '',
+        label: 'Anchor 3'
+      },
+    ],
+  },
+  template: `
+    <vz-header-navigation title="Hi" anchors="anchors" />
+  `,
 });
 
 //👇 Each story then reuses that template

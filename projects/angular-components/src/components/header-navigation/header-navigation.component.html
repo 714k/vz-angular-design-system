@@ -1,6 +1,6 @@
-<nav role="navigation" class="vz-table-of-contents">
+<nav role="navigation" class="vz-header-navigation">
   <p>{{ title }}</p>
-  <ul>
+  <ul *ngIf="anchors">
     <li 
       role="list"
       *ngFor="let anchor of anchors"

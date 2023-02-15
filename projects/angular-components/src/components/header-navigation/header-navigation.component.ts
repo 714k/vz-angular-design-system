@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-navigation.component.scss']
 })
 export class HeaderNavigationComponent {
-  title: string = "In this section";
-  anchors: object = [];
+  title: string = "";
+  anchors: Array<object> = [];
 }
