@@ -12,6 +12,10 @@
     "sb": "npm run docs:json && start-storybook -p 6006",
     "sb:docs": "start-storybook --docs --no-manager-cache"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/714k/vz-angular-design-system.git"
+  },
   "private": false,
   "dependencies": {
     "@angular/animations": "^15.1.0",
