@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AngularComponentsComponent } from './angular-components.component';
-
+import { HeaderNavigationComponent } from './components/header-navigation/header-navigation.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 
 @NgModule({
   declarations: [
-    AngularComponentsComponent
+    AngularComponentsComponent,
+    HeaderNavigationComponent,
+    LogoComponent
   ],
-  imports: [
-  ],
+  imports: [RouterModule],
   exports: [
-    AngularComponentsComponent
+    AngularComponentsComponent,
+    HeaderNavigationComponent,
+    LogoComponent
   ]
 })
 export class AngularComponentsModule { }
