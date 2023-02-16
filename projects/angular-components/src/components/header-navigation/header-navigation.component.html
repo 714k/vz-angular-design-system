@@ -1,6 +1,7 @@
 <nav role="navigation" class="vz-header-navigation">
   <p>{{ title }}</p>
-  <ul *ngIf="anchors">
+
+  <ul>
     <li 
       role="list"
       *ngFor="let anchor of anchors"
@@ -10,8 +11,9 @@
         [fragment]="anchor.href"
         [class]="anchor.classes" 
         [title]="anchor.title">
-        <span class="prefix">{{ anchor.prefixLabel }}</span> 
+        <span *ngIf="anchor.prefixLabel" class="prefix-label">{{ anchor.prefixLabel }} </span> 
         <span class="label">{{ anchor.label }}</span>
+        <span *ngIf="anchor.sufixLabel" class="sufix-label"> {{ anchor.sufixLabel }}</span> 
       </a>
     </li>
    </ul>

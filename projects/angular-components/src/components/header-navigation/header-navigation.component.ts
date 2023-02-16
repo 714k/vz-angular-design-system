@@ -1,4 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+type Anchors = {
+  title: string;
+  href: string;
+  classes?: string;
+  prefixLabel?: string;
+  sufixLabel?: string;
+  label: string;
+} []
 
 @Component({
   selector: 'vz-header-navigation',
@@ -6,6 +15,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-navigation.component.scss']
 })
 export class HeaderNavigationComponent {
-  title: string = "";
-  anchors: Array<object> = [];
+  @Input() title: string = "";
+  @Input() anchors: Anchors = [];
 }
